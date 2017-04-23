@@ -29,23 +29,23 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
-    // Project settings
-    yeoman: appConfig,
+  // Project settings
 
-    buildcontrol: {
-      options: {
-      dir: 'dist',
-      commit: true,
-      push: true,
-      message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-       },
-      pages: {
-      options: {
-      remote: 'git@github.com:Victa727/angular_app.git',
-      branch: 'gh-pages'
+     yeoman: appConfig,
+     buildcontrol: {
+     options: {
+     dir: 'dist',
+     commit: true,
+     push: true,
+     message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+     },
+     pages: {
+     options: {
+     remote: 'git@github.com:Victor727/angular_app.git',
+     branch: 'gh-pages'
         }
        }
-      },
+    },
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
