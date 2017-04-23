@@ -16,7 +16,7 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
     buildcontrol: 'grunt-build-control'
   });
 
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
        },
       pages: {
       options: {
-      remote: 'git@github.com:your_github_user/your_webapp.git',
+      remote: 'git@github.com:Victa727/angular_app.git',
       branch: 'gh-pages'
         }
        }
