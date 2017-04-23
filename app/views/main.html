@@ -1,12 +1,20 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
+  <h1>'Yo, Yo, 'Allo!</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
     Always a pleasure scaffolding your apps.
+    <div ng-app ng-init="firstnum=1;secondnum=2">
+    <input type="number" min="0" ng-model="firstnum">
+    plus
+    <input type="number" min="0" ng-model="secondnum">
+    equals
+    <b>{{firstnum + secondnum}}</b>
+    <span class="label label-success">{{firstnum + secondnum}}</span>
   </p>
   <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
+</div>
 <div class="row marketing">
   <h4>HTML5 Boilerplate</h4>
   <p>
